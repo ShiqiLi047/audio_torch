@@ -104,7 +104,7 @@ def read_audio_file(input_file):
     else:
         sampling_rate, signal = read_audio_generic(input_file)
 
-    if signal.ndim == 2 and signal.shape[1] == 1:
+    if signal.ndim == 2 and signal.shape[1] == 2:
         signal = signal.flatten()
 
     return sampling_rate, signal

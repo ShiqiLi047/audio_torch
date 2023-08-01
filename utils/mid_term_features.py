@@ -10,9 +10,9 @@ sys.path.insert(0, os.path.join(
 # from pyAudioAnalysis import utilities
 # from pyAudioAnalysis import audioBasicIO
 # from pyAudioAnalysis import ShortTermFeatures
-import utilities
-import audio_basic_io as audioBasicIO
-import short_term_feature as ShortTermFeatures
+from . import utilities
+from . import audio_basic_io as audioBasicIO
+from . import short_term_feature as ShortTermFeatures
 
 eps = 0.00000001
 

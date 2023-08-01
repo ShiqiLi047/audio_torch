@@ -4,8 +4,8 @@ from imblearn.over_sampling import SMOTE
 from sklearn.model_selection import GroupShuffleSplit
 # from pyAudioAnalysis import audioBasicIO
 # from pyAudioAnalysis import MidTermFeatures as aF
-import audio_basic_io as audioBasicIO
-import mid_term_features as aF
+from . import audio_basic_io as audioBasicIO
+from . import mid_term_features as aF
 
 import sys
 import numpy as np
